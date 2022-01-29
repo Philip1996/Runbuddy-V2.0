@@ -1,11 +1,12 @@
 # Run Buddy, Inc
 
 ## Purpose
-A website that offers fitness training services. 
+Make the webpage more responsive by adding javascript and bootstrap functionality to the page.
 
 ## Built With
 * HTML
 * CSS
+* Javescript
 
 ## Creator
 Made with ❤️ by Philip
