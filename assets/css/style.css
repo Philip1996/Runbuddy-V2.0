@@ -12,7 +12,7 @@
 
 body {
   color: var(--tertiary-color);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -27,7 +27,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/hero.bg3.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -40,6 +40,7 @@ header h1 {
   font-size: 36px;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Nosifer', cursive;
 }
 
 header a {
@@ -59,6 +60,7 @@ header nav ul {
   list-style: none;
 }
 
+
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
@@ -66,42 +68,10 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
-}
-
 /* HEADER / NAVBAR STYLES END */
 
 
 
-/* FOOTER STYLES START */
-footer {
-  background: var(--primary-color);
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-footer h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
-/* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
 section {
@@ -110,13 +80,14 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero.bg3.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
+  background-color: rgba(0,0,0,0.5);
   background-position: 80%;
 }
 
@@ -125,15 +96,23 @@ section {
   text-align: right;
   margin: 3.5%;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2;
+}
+
+.hero-cta p{
+  font-size: 23px;
+  text-align: justify;
+  word-spacing: 5px;
+  line-height: 1.5;
 }
 
 .hero-cta h2 {
   font-style: italic;
-  font-size: 55px;
+  font-size: 30px;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Nosifer', cursive;
 }
 
 .hero-form {
@@ -286,11 +265,12 @@ section {
 /* WHAT YOU DO STYLES START */
 .steps { 
   background: var(--primary-color);
+  margin: 2%;
 }
 
 .step {
-  margin: 50px auto;
-  padding-bottom: 50px;
+  margin: 20px auto;
+  padding-bottom: 20px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +327,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+ 
+  
 }
 
 .trainer {
@@ -354,6 +336,9 @@ section {
   flex: 1;
   background: var(--secondary-color);
   color: var(--primary-color);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(199, 50, 194);
+ 
 }
 
 .trainer img {
@@ -376,13 +361,16 @@ section {
 }
 
 .trainer-bio p {
-  font-size: 17px;
+  font-size: 20px;
+  text-align: justify;
+  word-spacing: 2px;
 }
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
 .contact {
   background: var(--secondary-color);
+  
 }
 
 .contact h2 {
@@ -400,12 +388,12 @@ section {
   margin: 15px;
 }
 
-.contact-info iframe {
+.contact-info iframe{
   height: 400px;
 }
 
 .contact-info div {
-  color: white;
+  color: white; 
 }
 
 .contact-info h3 {
@@ -471,6 +459,32 @@ section {
 .flex-row {
   display: flex;
 }
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--primary-color);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+/* END FOOTER STYLES */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
