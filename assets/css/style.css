@@ -276,6 +276,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step:last-child {
