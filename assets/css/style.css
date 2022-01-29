@@ -21,9 +21,6 @@ body {
 header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -33,11 +30,15 @@ header {
   background-position: 80%;
   z-index: 9999;
 }
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+}
 
 header h1 {
   font-weight: bold;
   margin: 0;
-  font-size: 36px;
+  font-size: 30px;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-family: 'Nosifer', cursive;
@@ -54,12 +55,23 @@ header nav {
 
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   list-style: none;
 }
 
+header nav ul li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s ease-in;
+}
+header nav ul li:hover::after{
+  width: 80%;
+}
 
 header nav ul li a {
   padding: 10px 15px;
@@ -276,6 +288,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step:last-child {
@@ -370,6 +383,7 @@ section {
 /* REACH OUT STYLES START */
 .contact {
   background: var(--secondary-color);
+  margin: 2%;
   
 }
 
