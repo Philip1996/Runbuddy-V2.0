@@ -1,10 +1,11 @@
 # Run Buddy, Inc
 
 ## Purpose
-Make the webpage more responsive by adding and bootstrap functionality to the page.
+Make the webpage more responsive for Runners.
 
 ## Built With
 * HTML
+* CSS
 
 ## Creator
 Made with ❤️ by Philip
